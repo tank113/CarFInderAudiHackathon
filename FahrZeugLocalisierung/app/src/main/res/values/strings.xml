@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FahrZeugLocalisierung</string>
+    <string name="title_activity_scan_barcode">ScanBarcodeActivity</string>
+    <string name="ros_master_uri">http://192.168.2.117:11311</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_retrieve_car_data">RetrieveCarData</string>
+    <string name="title_activity_display_car_details">DisplayCarDetails</string>
+    <string name="title_activity_scan_car_barcode">ScanCarBarcodeActivity</string>
+    <string name="title_activity_display_parking_details">DisplayParkingDetails</string>
+    <string name="title_activity_parkplace_search_success">ParkplaceSearchSuccess</string>
+    <string name="title_activity_parking_data_added_to_db">ParkingDataAddedToDB</string>
+    <string name="title_activity_parking_to_scan">ParkingToScanActivity</string>
+    <string name="title_activity_scan_barcode_screen">ScanBarcodeScreenActivity</string>
+    <string name="title_activity_scan_parking_barcode_screen">ScanParkingBarcodeScreenActivity
+    </string>
+    <string name="title_activity_locate_car">LocateCarActivity</string>
+    <string name="title_activity_retrieve_parking_data">RetrieveParkingData</string>
+    <string name="title_activity_parking_spot_details">ParkingSpotDetails</string>
+    <string name="title_activity_retrieve_parking_spot_details">RetrieveParkingSpotDetails</string>
+    <string name="title_activity_car_confirmation">CarConfirmationActivity</string>
+    <string name="title_activity_retrieve_car_details_with_uid">RetrieveCarDetailsWithUID</string>
+</resources>

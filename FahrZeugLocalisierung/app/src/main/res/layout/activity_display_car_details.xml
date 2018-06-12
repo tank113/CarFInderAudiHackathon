@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tanujkulshrestha.fahrzeuglocalisierung.DisplayCarDetails">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/audi_im_schatten" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="394dp"
+        android:layout_height="35dp"
+        android:background="#b3b3b3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/auditypev03_extendednormal"
+        android:text="Car Details"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="84dp"
+        android:layout_height="29dp"
+
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/logo2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/carImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/audilogistics" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="68dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Colour"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/likeButton"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="149dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Production Place"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="68dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Car ID"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImg" />
+
+    <Button
+        android:id="@+id/dislikeButton"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Cancel"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/likeButton"
+        app:layout_constraintTop_toTopOf="@+id/likeButton" />
+
+    <Button
+        android:id="@+id/likeButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_bold"
+        android:text="Confirm"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/dislikeButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/carImg"
+        android:layout_width="384dp"
+        android:layout_height="109dp"
+        android:background="#bb0a30"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/prodPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="productionplace"
+        android:fontFamily="@font/auditypev03_extendednormal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_extendednormal"
+        android:text="Colour"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/prodPlace"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/carID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_extendednormal"
+        android:text="CarId"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/prodPlace"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageView
+    android:id="@+id/imageView18"
+    android:layout_width="231dp"
+    android:layout_height="97dp"
+    app:layout_constraintBottom_toBottomOf="@+id/carImg"
+    app:layout_constraintEnd_toEndOf="@+id/carImg"
+    app:layout_constraintHorizontal_bias="0.06"
+    app:layout_constraintStart_toStartOf="@+id/carImg"
+    app:layout_constraintTop_toTopOf="@+id/carImg"
+    />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_bold"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/carImg"
+        app:layout_constraintEnd_toEndOf="@+id/carImg"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/carImg"
+        app:layout_constraintTop_toTopOf="@+id/carImg"
+        app:layout_constraintVertical_bias="0.53" />
+</android.support.constraint.ConstraintLayout>

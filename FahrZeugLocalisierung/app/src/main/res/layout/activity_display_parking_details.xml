@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tanujkulshrestha.fahrzeuglocalisierung.DisplayParkingDetails">
+
+    <Button
+        android:id="@+id/likeButton"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_bold"
+        android:text="Confirm"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dislikeButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zonePlan"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/dislikeButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Cancel"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/likeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/likeButton" />
+
+    <TextView
+        android:id="@+id/buildings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Building #"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <TextView
+        android:id="@+id/zonePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_normal"
+        android:text="Zone Plan"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <TextView
+        android:id="@+id/redHeader"
+        android:layout_width="384dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#bb0a30"
+        app:layout_constraintBottom_toTopOf="@+id/buildings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+
+        app:layout_constraintBottom_toTopOf="@+id/redHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/audilogistics" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="394dp"
+        android:layout_height="32dp"
+        android:background="#b3b3b3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="84dp"
+        android:layout_height="29dp"
+
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/auditypev03_extendednormal"
+        android:text="Slot Details"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="102dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/redHeader"
+        app:layout_constraintStart_toStartOf="@+id/redHeader"
+        app:layout_constraintTop_toTopOf="@+id/redHeader"
+        app:srcCompat="@drawable/parking" />
+
+    <TextView
+        android:id="@+id/buildnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_normal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buildings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buildings" />
+
+    <TextView
+        android:id="@+id/zoneid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoneid"
+        android:fontFamily="@font/auditypev03_extendednormal"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/redHeader"
+        app:layout_constraintEnd_toEndOf="@+id/slot"
+        app:layout_constraintStart_toStartOf="@+id/slot"
+        app:layout_constraintTop_toTopOf="@+id/redHeader"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <ImageView
+        android:id="@+id/dynimg"
+        android:layout_width="387dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/likeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buildings"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/auditypev03_bold"
+        android:text="slot"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/redHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redHeader"
+        app:layout_constraintVertical_bias="0.328" />
+</android.support.constraint.ConstraintLayout>

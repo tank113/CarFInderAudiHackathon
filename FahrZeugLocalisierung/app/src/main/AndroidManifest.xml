@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tanujkulshrestha.fahrzeuglocalisierung">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScanParkingBarcodeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="barcodeScannerActivity"
+            android:theme="@style/AppOverlayTheme"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".RetrieveCarData"
+            android:label="@string/title_activity_retrieve_car_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayCarDetails"
+            android:label="@string/title_activity_display_car_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScanCarBarcodeActivity"
+            android:label="@string/title_activity_scan_car_barcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayParkingDetails"
+            android:label="@string/title_activity_display_parking_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParkingDataAddedToDB"
+            android:label="@string/title_activity_parking_data_added_to_db"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScanCarBarcodeScreenActivity"
+            android:label="@string/title_activity_scan_barcode_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScanParkingBarcodeScreenActivity"
+            android:label="@string/title_activity_scan_parking_barcode_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LocateCarActivity"
+            android:label="@string/title_activity_locate_car"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RetrieveParkingData"
+            android:label="@string/title_activity_retrieve_parking_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParkingSpotDetails"
+            android:label="@string/title_activity_parking_spot_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RetrieveParkingSpotDetails"
+            android:label="@string/title_activity_retrieve_parking_spot_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarConfirmationActivity"
+            android:label="@string/title_activity_car_confirmation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RetrieveCarDetailsWithUID"
+            android:label="@string/title_activity_retrieve_car_details_with_uid"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
